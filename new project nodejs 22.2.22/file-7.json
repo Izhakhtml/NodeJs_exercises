@@ -1,0 +1,62 @@
+[
+    {
+        "fName": "manager1",
+        "lName": "lijalem",
+        "email": "manager@com",
+        "salary": 14000,
+        "employees": [
+            "aaa",
+            "bbb",
+            "ccc",
+            "ddd"
+        ]
+    },
+    {
+        "fName": "manager2",
+        "lName": "lijalem",
+        "email": "manager@com",
+        "salary": 12000,
+        "employees": [
+            "sss",
+            "asss",
+            "xxx",
+            "zzz"
+        ]
+    },
+    {
+        "fName": "manager3",
+        "lName": "lijalem",
+        "email": "manager@com",
+        "salary": 11000,
+        "employees": [
+            "ccc",
+            "ccc",
+            "ccc",
+            "cccc"
+        ]
+    },
+    {
+        "fName": "manager4",
+        "lName": "lijalem",
+        "email": "manager@com",
+        "salary": 10000,
+        "employees": [
+            "bbb",
+            "ccc",
+            "qqq",
+            "ddd"
+        ]
+    },
+    {
+        "fName": "manager5",
+        "lName": "lijalem",
+        "email": "manager@com",
+        "salary": 19000,
+        "employees": [
+            "zzz",
+            "xxx",
+            "sss",
+            "wwww"
+        ]
+    }
+]

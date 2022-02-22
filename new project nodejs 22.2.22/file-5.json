@@ -1,0 +1,44 @@
+[
+    {
+        "fName": "user1",
+        "lName": "users",
+        "email": "email.com",
+        "age": 25,
+        "isConnected": false
+    },
+    {
+        "fName": "user2",
+        "lName": "users",
+        "email": "email.com",
+        "age": 22,
+        "isConnected": true
+    },
+    {
+        "fName": "user3",
+        "lName": "users",
+        "email": "email.com",
+        "age": 21,
+        "isConnected": false
+    },
+    {
+        "fName": "user4",
+        "lName": "users",
+        "email": "email.com",
+        "age": 26,
+        "isConnected": true
+    },
+    {
+        "fName": "user5",
+        "lName": "users",
+        "email": "email.com",
+        "age": 24,
+        "isConnected": false
+    },
+    {
+        "fName": "user6",
+        "lName": "users",
+        "email": "email.com",
+        "age": 22,
+        "isConnected": true
+    }
+]

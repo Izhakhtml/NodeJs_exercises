@@ -1,0 +1,12 @@
+{
+    "fName": "izhak",
+    "lName": "lijalem",
+    "email": "izhak@com",
+    "salary": 14000,
+    "employees": [
+        "aaa",
+        "bbb",
+        "ccc",
+        "ddd"
+    ]
+}

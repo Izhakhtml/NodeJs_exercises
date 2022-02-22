@@ -1,0 +1,27 @@
+[
+    {
+        "name": "izhak",
+        "agr": 7,
+        "ifIsGarden": false
+    },
+    {
+        "name": "aliav",
+        "agr": 6,
+        "ifIsGarden": true
+    },
+    {
+        "name": "malca",
+        "agr": 4,
+        "ifIsGarden": true
+    },
+    {
+        "name": "kfir",
+        "agr": 8,
+        "ifIsGarden": false
+    },
+    {
+        "name": "matan",
+        "agr": 2,
+        "ifIsGarden": true
+    }
+]

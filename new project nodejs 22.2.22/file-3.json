@@ -1,0 +1,32 @@
+[
+    {
+        "name": "toki1",
+        "gender": "female",
+        "country": "israel",
+        "color": "black"
+    },
+    {
+        "name": "toki2",
+        "gender": "male",
+        "country": "brazil",
+        "color": "white"
+    },
+    {
+        "name": "toki3",
+        "gender": "female",
+        "country": "haifa",
+        "color": "green"
+    },
+    {
+        "name": "toki4",
+        "gender": "male",
+        "country": "dimona",
+        "color": "gray"
+    },
+    {
+        "name": "toki5",
+        "gender": "female",
+        "country": "nativot",
+        "color": "black"
+    }
+]
