@@ -1,6 +1,9 @@
 const fs = require('fs');
 const toki = require("./TokiClass");
 const user = require("./UserClass");
+const zlib = require("zlib");
+const eventsAct = require('events')
+const crypto = require('crypto');
 //! exe 13-14
 // let text = "Kiryat Ekron was founded in 1948, as Kfar Ekron, on the site of the Palestinian village of Aqir, and was named after the biblical Ekron, a major Philistine city that is believed to have once existed at nearby Tel Mikne.[2] After the war, new immigrants from Yemen and Bulgaria settled in the remaining houses. In November 1948, two ma'abarot were established on the village's lands; the Aqir ma'abara, and the Givat Brenner ma'abara. In 1953, the Aqir ma'abara was officially made part of Kfar Ekron, followed by the Givat Brenner ma'abara in 1955. From 1954 to 1963, Kfar Ekron belonged to the Givat Brenner regional council. In 1963, the name of the town was changed to Kiryat Ekron, and it became an independent local municipality.[3]"
 // fs.writeFile("./text-1.txt",`${text}`,()=>{});
@@ -10,7 +13,7 @@ const user = require("./UserClass");
 // fs.writeFile("./text-2.txt",`${text}`,()=>{});
 // require('./EventClass-2');
 //! exe 16
-// let arrayMovies = ["mask","the child","the sky","the door","the world"];
+let arrayMovies = ["mask","the child","the sky","the door","the world"];
 // fs.writeFile("./file-1.json",`${JSON.stringify(arrayMovies)}`,()=>{});
 // require('./EventClass-3');
 //! exe 17
@@ -58,4 +61,57 @@ const ManagerArray =
     {fName:"manager5",lName:"lijalem",email:"manager@com",salary:19000,employees:["zzz","xxx","sss","wwww"]},
 ]
 // fs.writeFile("./file-7.json",`${JSON.stringify(ManagerArray)}`,()=>{});
-require('./EventClass-9');
+// require('./EventClass-9');
+//! tries streatm
+// fs.writeFile("./test-1.txt","izhak  ",()=>{});
+// const readStream = fs.createReadStream("./test-1.txt");
+// const writeStream = fs.createWriteStream("./out.txt");
+// readStream.pipe(writeStream)
+//! tries streatm zlib
+// fs.writeFile("./test-1.txt", `${arrayMovies}`,()=>{});
+// const readStream = fs.createReadStream("./test-1.txt"); //! stream that read from file.
+// const writeStream = fs.createWriteStream("./out.gz") //! stream that write to new file.
+// const gzip = zlib.createGzip(); //! קובץ הזליב הוא מכווץ את המידע שקיבל מסטרים הקריאה ומעביר אותו לסטרים כתיבה  
+// readStream.pipe(gzip).pipe(writeStream);
+//!
+// class MyClass extends eventsAct { };
+// const myClass = new MyClass();
+// myClass.on("text",()=>{
+//     console.log("mgdim");
+// })
+// myClass.emit("text");
+//!
+//! tries streatm with events 
+// const readStream = fs.createReadStream('./file-7.json');
+// const writeStream = fs.createWriteStream('./out.txt');
+// readStream.on('end',()=>{
+//     console.log('end');
+// })
+// readStream.on('pipe',(data)=>{
+//     console.log(data);
+// })
+// readStream.pipe(writeStream);
+//!
+// let counter = 0;
+// readStream.on("data",(chank)=>{
+//     counter += chank.length;
+// })
+// readStream.on("end",()=>{
+//  console.log(`the numbers of lengths is ${counter}`)
+// })
+// readStream.pipe(writeStream);
+//! exercise  
+const readStreams = fs.createReadStream('./txt.encr');
+const writeStreams = fs.createWriteStream('./decrypted.txt');
+
+//!  addition exercise crypto 
+const algorithm = 'aes-256-ctr';
+const password = 'Password used to generate key';
+const key = crypto.scryptSync(password, 'SomeSalt', 32);
+const iv = 'myIVstringisnice1'.toString('hex').slice(0, 16);
+const cryptoStream = crypto.createCipheriv(algorithm,key,iv);
+readStreams.pipe(cryptoStream).pipe(writeStreams);
+
+//!  addition exercise createDecipheriv
+const cryptoDecipheriv = crypto.createDecipheriv(algorithm,key,iv);
+readStreams.pipe(cryptoDecipheriv).pipe(writeStreams)
