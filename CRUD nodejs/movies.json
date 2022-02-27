@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "writer": "izo",
+        "rating": 9,
+        "movieName": "the car"
+    },
+    {
+        "id": 2,
+        "writer": "avi",
+        "rating": 8,
+        "movieName": "the view"
+    },
+    {
+        "id": 3,
+        "writer": "shimon",
+        "rating": 5,
+        "movieName": "the story"
+    },
+    {
+        "id": 4,
+        "writer": "marcos",
+        "rating": 10,
+        "movieName": "the sky"
+    },
+    {
+        "id": 5,
+        "writer": "alon",
+        "rating": 5,
+        "movieName": "the moalem"
+    },
+    {
+        "id": 6,
+        "writer": "avi",
+        "rating": 9,
+        "movieName": "the dream"
+    },
+    {
+        "id": 7,
+        "writer": "ido",
+        "rating": 9,
+        "movieName": "the salt"
+    },
+    {
+        "id": 8,
+        "writer": "alon",
+        "rating": 9,
+        "movieName": "the moalem"
+    },
+    {
+        "id": 9,
+        "writer": "itamar",
+        "rating": 9,
+        "movieName": "the head"
+    }
+]

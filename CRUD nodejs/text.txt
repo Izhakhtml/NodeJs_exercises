@@ -1,0 +1,12 @@
+
+  "movie": {
+    "id": 3,
+    "writer": "shimon",
+    "rating": 5,
+    "movieName": "the story"
+  }
+  {
+         "writer":"itamar",
+         "raing":9,
+         "movieName":"the head"
+}

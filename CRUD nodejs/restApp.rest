@@ -1,0 +1,29 @@
+
+### GET
+GET http://localhost:3000/movies
+
+### GET BY ID
+GET http://localhost:3000/movies/8
+
+### POST 
+POST  http://localhost:3000/movies
+content-type: application/json
+
+{
+         "id":9,
+         "writer":"itamar",
+         "raing":9,
+         "movieName":"the head"
+}
+### PUT 
+PUT http://localhost:3000/movies/9
+content-type: application/json
+
+{
+         "id":8,
+         "writer":"alon",
+         "rating":5,
+         "movieName":"the moalem"
+}
+### DELETE
+DELETE  http://localhost:3000/movies/9
